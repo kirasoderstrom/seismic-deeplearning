@@ -263,7 +263,7 @@ def split_alaudah_et_al_19(data_dir, stride, patch_size, fraction_validation=0.2
 
 # TODO: Try https://github.com/Chilipp/docrep for doscstring reuse
 class SplitTrainValCLI(object):
-    def section(self, data_dir, per_val=0.2, log_config="logging.conf"):
+    def section(self, data_dir, per_val=0.2, log_config="scripts/logging.conf"):
         """Generate section based train and validation files for Netherlands F3 dataset.
 
         Args:
@@ -274,7 +274,7 @@ class SplitTrainValCLI(object):
         """
         return split_section_train_val(data_dir, per_val=per_val, log_config=log_config)
 
-    def patch(self, data_dir, stride, patch_size, per_val=0.2, log_config="logging.conf"):
+    def patch(self, data_dir, stride, patch_size, per_val=0.2, log_config="scripts/logging.conf"):
         """Generate patch based train and validation files for Netherlands F3 dataset.
 
         Args:
